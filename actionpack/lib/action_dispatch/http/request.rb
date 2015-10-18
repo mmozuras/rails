@@ -364,7 +364,7 @@ module ActionDispatch
     # Returns the authorization header regardless of whether it was specified directly or through one of the
     # proxy alternatives.
     def authorization
-      get_header('HTTP_AUTHORIZATION')   ||
+      get_header("HTTP_AUTHORIZATION")   ||
       get_header('X-HTTP_AUTHORIZATION') ||
       get_header('X_HTTP_AUTHORIZATION') ||
       get_header('REDIRECT_X_HTTP_AUTHORIZATION')
